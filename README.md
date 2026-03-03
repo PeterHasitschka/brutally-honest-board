@@ -61,11 +61,22 @@ REASONING:
 
 The board responds in whatever language you submit your idea in. Write in German, get the session in German. Write in English, get it in English.
 
+### Session protocol
+
+After every session, the Chairman writes a markdown protocol to `projects/<yyyy-mm-dd>-<project-name>.md`. It contains:
+
+- **The Idea** — a concise breakdown of what was proposed
+- **Board Arguments** — key points from each board member
+- **Verdict** — the full structured verdict
+
+The protocol is written in the same language as the session. The `projects/` folder is git-ignored, so protocols stay local.
+
 ## Project structure
 
 ```
 brutally-honest-board/
 ├── CLAUDE.md                        # Project rules and orchestration instructions
+├── projects/                        # Session protocols (git-ignored)
 └── .claude/
     └── agents/
         ├── board-session.md         # Orchestrator agent — runs the full session
