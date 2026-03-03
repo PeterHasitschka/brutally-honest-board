@@ -27,15 +27,13 @@ No cheerleading. No "great idea!" No softening with "but if you just...". Only s
 
 ### Run a board session
 
-Open Claude Code in this project directory and submit your business idea:
+Open Claude Code in this project directory and just describe your idea:
 
 ```
-/board-session
-
-My idea: A subscription app that sends personalized book summaries via WhatsApp every morning.
+A subscription app that sends personalized book summaries via WhatsApp every morning.
 ```
 
-Or just describe your idea directly — Claude will orchestrate the full session automatically.
+Claude reads the `CLAUDE.md` instructions and automatically orchestrates the full board session — no command needed.
 
 ### What you get
 
