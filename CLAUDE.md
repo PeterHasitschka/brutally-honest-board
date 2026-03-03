@@ -8,9 +8,10 @@ The user submits a business idea. You run the full board session and deliver a v
 
 ## Session Flow
 1. User submits a business idea
-2. Invoke each agent in order via `.claude/agents/`
-3. The Market Realist performs a web search for real competitors and market data before speaking
-4. The Chairman speaks last and delivers the structured verdict
+2. Invoke the **Board Session** agent (`.claude/agents/board-session.md`) — it orchestrates the full session
+3. The Board Session agent runs all five board members in parallel, then invokes the Chairman last
+4. The Market Realist performs a web search for real competitors and market data before speaking
+5. The Chairman speaks last, delivers the structured verdict, and writes the session protocol
 
 ## Rules for all agents
 - No agent may compliment the user directly
